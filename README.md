@@ -105,6 +105,3 @@ v 0.0.4
      |
      |  __weakref__
      |      list of weak references to the object (if defined)
-
-FILE
-    c:\users\lab54\documents\base-pypm5-0.0.4\pypm5.py
