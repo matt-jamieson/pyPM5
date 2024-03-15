@@ -1,11 +1,47 @@
 # pyPM5
 A python package for interfacing with the Virginia Diodes PM5 terahertz powermeter. This works via the PM5() object which communicates to the powermeter with pyvisa, and interprets the results. The user can read powers and control the instrument, by changing the power range, cal factor, etc.
 
-## NAME
-    pyPM5 - Created on Mon Sep  4 15:51:44 2023
+-------------
+Prerequisites
+-------------
 
-## DESCRIPTION
-    @author: Matt Jamieson
+Must have the python programming language installed with the following 
+packages:
+
+- pyvisa
+
+------------
+Installation
+------------
+
+Python and required packages (pyvisa) must be installed prior to installing.
+- To install use     
+```
+pip install pyPM5
+```
+- And to import use
+```
+from pyPM5 import pyPM5
+```
+
+-----
+Example Usage
+-----
+```
+from pyPM5 import pyPM5
+power_meter = pyPM5.PM5()
+PM5.list_resources()
+> ["ASRL1::INSTR"]
+power_meter.connect("ASRL1::INSTR")
+power_meter.read_power()
+> 0.00215
+
+```
+-----------
+Change Log
+-----------
+v 0.0.4
+- Changed ability to import
 
 ## CLASSES
     builtins.object
