@@ -1,4 +1,5 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages
+from distutils.core import setup
 
 VERSION = '0.0.4' 
 DESCRIPTION = 'Package to interface Virginia Diodes PM5 Powermeter with Python'
@@ -11,6 +12,8 @@ setup(
         version=VERSION,
         author="Matt Jamieson",
         author_email="<mjamieson21@outlook.com>",
+        url = 'https://github.com/matt-jamieson/pyPM5',   
+        download_url = 'https://github.com/matt-jamieson/pyPM5/archive/refs/tags/0.0.4.tar.gz', 
         description=DESCRIPTION,
         long_description=LONG_DESCRIPTION,
         packages=find_packages(),
