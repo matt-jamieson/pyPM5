@@ -31,10 +31,10 @@ Example Usage
 from pyPM5 import pyPM5
 power_meter = pyPM5.PM5()
 PM5.list_resources()
-> ["ASRL1::INSTR"]
+>>> ["ASRL1::INSTR"]
 power_meter.connect("ASRL1::INSTR")
 power_meter.read_power()
-> 0.00215
+>>> 0.00215
 
 ```
 -----------
